@@ -11,7 +11,7 @@
  Target Server Version : 100136
  File Encoding         : 65001
 
- Date: 06/12/2018 12:50:58
+ Date: 07/12/2018 20:44:32
 */
 
 SET NAMES utf8mb4;
@@ -200,46 +200,46 @@ CREATE TABLE `sanpham`  (
 -- ----------------------------
 -- Records of sanpham
 -- ----------------------------
-INSERT INTO `sanpham` VALUES (1, 'SP001', 'Nhẫn Thu Hà', 1, 4, 'Trung quốc', NULL, '2018-12-03 21:33:53.000000', 20, 'imgs/sp/4/main_thumbs.jpg', 99.999, 15, 0);
-INSERT INTO `sanpham` VALUES (2, 'SP002', 'Điện Thoại Lumia 1280', 2, 5, 'Hàn Quốc', NULL, '2018-11-27 21:34:03.000000', 2, 'imgs/sp/4/main_thumbs.jpg', 99.999, 20, 1);
-INSERT INTO `sanpham` VALUES (3, 'SP003', 'Điện Thoại trượt nắp ', 2, NULL, 'Việt Nam', NULL, '2018-11-28 21:34:12.000000', 13, 'imgs/sp/dienthoai3/main_thumbs.jpg', 99.999, 48, 1);
-INSERT INTO `sanpham` VALUES (4, 'SP004', 'Quần áo em bé 6 tuổi', 4, NULL, 'Việt Nam', NULL, '2018-11-28 21:34:18.000000', 23, 'imgs/sp/8/main_thumbs.jpg', 1.000, 24, 0);
-INSERT INTO `sanpham` VALUES (5, 'SP005', 'Giày Tay người lớn', 5, NULL, 'Phú Yên', NULL, '2018-12-01 21:34:23.000000', 140, 'imgs/sp/21/main_thumbs.jpg', 2500.000, 11, 0);
-INSERT INTO `sanpham` VALUES (6, 'SP006', 'Quần tây cao cấp', 4, NULL, 'Đà Lạt', NULL, '2018-11-26 21:34:30.000000', 2300, 'imgs/sp/20/main_thumbs.jpg', 150.000, 25, 1);
-INSERT INTO `sanpham` VALUES (7, 'SP007', 'Giày em bé', 5, NULL, 'Malaysia', NULL, '2018-12-02 21:34:35.000000', 1200, 'imgs/sp/giay2/main_thumbs.jpg', 175.000, 24, 0);
-INSERT INTO `sanpham` VALUES (8, 'SP008', 'Bông tai lexury120', 3, NULL, 'DakLak', NULL, '2018-12-03 21:34:39.000000', 45, 'imgs/sp/3/main_thumbs.jpg', 125.000, 58, 1);
-INSERT INTO `sanpham` VALUES (9, 'SP009', 'Điện Thoại SamSung s7', 2, NULL, 'DakLak', NULL, '2018-12-02 21:34:45.000000', 54, 'imgs/sp/dienthoai1/main_thumbs.jpg', 1125.000, 25, 1);
-INSERT INTO `sanpham` VALUES (10, 'SP010', 'Điện Thoại Samsung 720', 2, NULL, 'TPHCM', NULL, '2018-12-02 21:34:51.000000', 31, 'imgs/sp/4/main_thumbs.jpgimgs/sp/dienthoai2/main_thumbs.jpg', 750.000, 24, 1);
-INSERT INTO `sanpham` VALUES (11, 'SP011', 'Điện Thoại Nokia 230', 2, NULL, 'Nam Định', NULL, '2018-12-03 09:56:44.000000', 1000, 'imgs/sp/dienthoai1/main_thumbs.jpg', 142.000, 25, 1);
-INSERT INTO `sanpham` VALUES (12, 'SP012', 'Điện Thoại Nokia S7-230', 2, NULL, 'Hàn Quốc', NULL, '2018-11-26 09:56:49.000000', 20, 'imgs/sp/dienthoai4/main_thumbs.jpg', 1142.000, 45, 0);
-INSERT INTO `sanpham` VALUES (13, 'SP013', 'Điện Thoại Nokia Lumia 120SD', 2, NULL, 'TPHCM', NULL, '2018-11-28 10:56:55.000000', 50, 'imgs/sp/30/main_thumbs.jpg', 523.000, 95, 0);
-INSERT INTO `sanpham` VALUES (14, 'SP014', 'Điện Thoại Nokia-Lumia 750HD Plus', 2, NULL, 'TPHCM', NULL, '2018-12-04 09:57:03.000000', 55, 'imgs/sp/16/main_thumbs.jpg', 145.250, 68, 1);
-INSERT INTO `sanpham` VALUES (15, 'SP015', 'Điện Thoại Nokia 570 Plus', 2, NULL, 'Gia Lai', NULL, '2018-11-28 09:57:08.000000', 25, 'imgs/sp/7/main_thumbs.jpg', 158.250, 14, 0);
-INSERT INTO `sanpham` VALUES (16, 'SP016', 'Điện Thoại Nokia - Cao Cấp 702SD', 2, NULL, 'Phú Quốc', NULL, '2018-12-03 09:57:17.000000', 27, 'imgs/sp/5/main_thumbs.jpg', 180.000, 32, 1);
-INSERT INTO `sanpham` VALUES (17, 'SP017', 'Nhẫn Cao Cấp Hà Liên', 1, NULL, 'TPHCM', NULL, '2018-12-04 09:46:36.000000', 14, 'imgs/sp/24/main_thumbs.jpg', 456.240, 47, 0);
-INSERT INTO `sanpham` VALUES (18, 'SP018', 'Nhẫn 7 màu cao cấp', 1, NULL, 'TPHCM', NULL, '2018-12-04 09:46:42.000000', 19, 'imgs/sp/25/main_thumbs.jpg', 1452.250, 25, 1);
-INSERT INTO `sanpham` VALUES (19, 'SP019', 'Nhẫn mạ vàng 9999', 1, NULL, 'Phú yên', NULL, '2018-12-04 09:46:47.000000', 91, 'imgs/sp/26/main_thumbs.jpg', 1258.240, 11, 0);
-INSERT INTO `sanpham` VALUES (20, 'SP020', 'Nhẫn kim cương Romatic', 1, NULL, 'Hà Nội', NULL, '2018-11-30 09:46:51.000000', 65, 'imgs/sp/27/main_thumbs.jpg', 9999.999, 35, 0);
-INSERT INTO `sanpham` VALUES (21, 'SP021', 'Nhẫn bạc đính vàng', 1, NULL, 'TPHCM', NULL, '2018-12-03 09:46:59.000000', 25, 'imgs/sp/28/main_thumbs.jpg', 2584.280, 25, 1);
-INSERT INTO `sanpham` VALUES (22, 'SP022', 'Nhẫn loda', 1, NULL, 'Nha Trang', NULL, '2018-12-09 09:47:04.000000', 14, 'imgs/sp/23/main_thumbs.jpg', 8965.000, 11, 0);
-INSERT INTO `sanpham` VALUES (23, 'SP023', 'Bông Tai Em Bé SD120', 3, NULL, 'DakLak', NULL, '2018-12-02 09:47:29.000000', 22, 'imgs/sp/9/main_thumbs.jpg', 5522.500, 254, 1);
-INSERT INTO `sanpham` VALUES (24, 'SP024', 'Bông Tai Hà Giang', 3, NULL, 'Bà Rịa Vũng Tàu', NULL, '2018-12-03 09:48:08.000000', 14, 'imgs/sp/11/main_thumbs.jpg', 258.896, 24, 1);
-INSERT INTO `sanpham` VALUES (25, 'SP025', 'Bông Tai Đính Hạt Cườm Cao Cấp', 3, NULL, 'TPHCM', NULL, '2018-11-29 09:48:22.000000', 80, 'imgs/sp/17/main_thumbs.jpg', 140.000, 91, 1);
-INSERT INTO `sanpham` VALUES (26, 'SP026', 'Bông Tai Hạt Sophie', 3, NULL, 'Hàn Xanh', NULL, '2018-12-03 09:48:30.000000', 14, 'imgs/sp/bongtai1/main_thumbs.jpg', 586.000, 12, 0);
-INSERT INTO `sanpham` VALUES (27, 'SP027', 'Bông Tai Hạt Ramot bạc', 3, NULL, 'Nha Trang', NULL, '2018-12-05 09:48:35.000000', 63, 'imgs/sp/bongtai2/main_thumbs.jpg', 1558.000, 2, 0);
-INSERT INTO `sanpham` VALUES (28, 'SP028', 'Quần cho baby 8 tuổi', 4, NULL, 'TPHCM', NULL, '2018-11-26 09:49:40.000000', 63, 'imgs/sp/quanao1/main_thumbs.jpg', 152.240, 3, 0);
-INSERT INTO `sanpham` VALUES (29, 'SP029', 'Quần freestyle cho bé', 4, NULL, 'Phú Quốc', NULL, '2018-12-03 07:52:27.000000', 25, 'imgs/sp/quanao2/main_thumbs.jpg', 2558.500, 6, 1);
-INSERT INTO `sanpham` VALUES (30, 'SP030', 'Quần jean đẹp cao cấp', 4, NULL, 'Bà Rịa Vũng Tàu', NULL, '2018-12-03 09:52:37.000000', 24, 'imgs/sp/quanao4/main_thumbs.jpg', 1558.260, 5, 1);
-INSERT INTO `sanpham` VALUES (31, 'SP031', 'Áo thun cho nam vãi nhung', 4, NULL, 'Bà Rịa Vũng Tàu', NULL, '2018-12-02 11:53:25.000000', 27, 'imgs/sp/1/main_thumbs.jpg', 1486.000, 14, 0);
-INSERT INTO `sanpham` VALUES (32, 'SP032', 'Áo thun trơn sơ mi', 4, NULL, 'TPHCM', NULL, '2018-12-02 12:53:33.000000', 72, 'imgs/sp/1/2_thumbs.jpg', 15.256, 47, 1);
-INSERT INTO `sanpham` VALUES (33, 'SP033', 'Giày nam thể thao đẹp', 5, NULL, 'TPHCM', NULL, '2018-11-30 09:53:46.000000', 84, 'imgs/sp/giay1/main_thumbs.jpg', 5895.560, 24, 0);
-INSERT INTO `sanpham` VALUES (34, 'SP034', 'Giày thể thao cao cấp', 5, NULL, 'Phú Quốc', NULL, '2018-12-03 09:54:45.000000', 45, 'imgs/sp/giay3/main_thumbs.jpg', 4785.556, 23, 1);
-INSERT INTO `sanpham` VALUES (35, 'SP035', 'Giày nam đẹp cao cấp 230', 5, NULL, 'Bà Rịa Vũng Tàu', NULL, '2018-11-28 09:55:20.000000', 61, 'imgs/sp/giay4/main_thumbs.jpg', 14.599, 2, 1);
-INSERT INTO `sanpham` VALUES (36, 'SP036', 'Giày + dây siêu đẹp', 5, NULL, 'Nha Trang', NULL, '2018-12-03 09:00:26.000000', 95, 'imgs/sp/giay5/main_thumbs.jpg', 1583.580, 24, 0);
-INSERT INTO `sanpham` VALUES (37, 'SP037', 'Giày sale 20%', 5, NULL, 'Nha Trang', NULL, '2018-12-02 06:55:41.000000', 85, 'imgs/sp/22/main_thumbs.jpg', 4485.000, 24, 1);
-INSERT INTO `sanpham` VALUES (38, 'SP038', 'Giày tây cao cấp', 5, NULL, 'Bà Rịa Vũng Tàu', NULL, '2018-12-02 09:55:51.000000', 75, 'imgs/sp/21/main_thumbs.jpg', 1482.000, 25, 0);
-INSERT INTO `sanpham` VALUES (39, 'SP039', 'Giày nữ đẹp sale 10%', 5, NULL, 'Phú Quốc', NULL, '2018-12-02 09:55:58.000000', 7, 'imgs/sp/2/main_thumbs.jpg', 149.000, 77, 1);
-INSERT INTO `sanpham` VALUES (40, 'SP040', 'Giày sandal cao cấp cho trẻ em', 5, NULL, 'Bà Rịa Vũng Tàu', NULL, '2018-11-26 09:56:06.000000', 31, 'imgs/sp/giay5/main_thumbs.jpg', 4278.000, 21, 1);
+INSERT INTO `sanpham` VALUES (1, 'SP001', 'Nhẫn Thu Hà', 1, 4, 'Trung quốc', NULL, '2018-12-03 21:33:53.000000', 20, 'imgs/sp/4/main', 99.999, 15, 0);
+INSERT INTO `sanpham` VALUES (2, 'SP002', 'Điện Thoại Lumia 1280', 2, 5, 'Hàn Quốc', NULL, '2018-11-27 21:34:03.000000', 2, 'imgs/sp/7/1', 99.999, 20, 1);
+INSERT INTO `sanpham` VALUES (3, 'SP003', 'Điện Thoại trượt nắp ', 2, 1, 'Việt Nam', NULL, '2018-11-28 21:34:12.000000', 13, 'imgs/sp/5/1', 99.999, 48, 1);
+INSERT INTO `sanpham` VALUES (4, 'SP004', 'Quần áo em bé 6 tuổi', 4, 5, 'Việt Nam', NULL, '2018-11-28 21:34:18.000000', 23, 'imgs/sp/8/main', 1.000, 24, 0);
+INSERT INTO `sanpham` VALUES (5, 'SP005', 'Giày Tay người lớn', 5, 2, 'Phú Yên', NULL, '2018-12-01 21:34:23.000000', 140, 'imgs/sp/21/main', 2500.000, 11, 0);
+INSERT INTO `sanpham` VALUES (6, 'SP006', 'Quần tây cao cấp', 4, 5, 'Đà Lạt', NULL, '2018-11-26 21:34:30.000000', 2300, 'imgs/sp/21/3', 150.000, 25, 1);
+INSERT INTO `sanpham` VALUES (7, 'SP007', 'Giày em bé', 5, 2, 'Malaysia', NULL, '2018-12-02 21:34:35.000000', 1200, 'imgs/sp/21/2', 175.000, 24, 0);
+INSERT INTO `sanpham` VALUES (8, 'SP008', 'Bông tai lexury120', 3, 3, 'DakLak', NULL, '2018-12-03 21:34:39.000000', 45, 'imgs/sp/3/main', 125.000, 58, 1);
+INSERT INTO `sanpham` VALUES (9, 'SP009', 'Điện Thoại SamSung s7', 2, 1, 'DakLak', NULL, '2018-12-02 21:34:45.000000', 54, 'imgs/sp/16/1', 1125.000, 25, 1);
+INSERT INTO `sanpham` VALUES (10, 'SP010', 'Điện Thoại Samsung 720', 2, 1, 'TPHCM', NULL, '2018-12-02 21:34:51.000000', 31, 'imgs/sp/30/1', 750.000, 24, 1);
+INSERT INTO `sanpham` VALUES (11, 'SP011', 'Điện Thoại Nokia 230', 2, 1, 'Nam Định', NULL, '2018-12-03 09:56:44.000000', 1000, 'imgs/sp/30/main', 142.000, 25, 1);
+INSERT INTO `sanpham` VALUES (12, 'SP012', 'Điện Thoại Nokia S7-230', 2, 1, 'Hàn Quốc', NULL, '2018-11-26 09:56:49.000000', 20, 'imgs/sp/16/main', 1142.000, 45, 0);
+INSERT INTO `sanpham` VALUES (13, 'SP013', 'Điện Thoại Nokia Lumia 120SD', 2, 1, 'TPHCM', NULL, '2018-11-28 10:56:55.000000', 50, 'imgs/sp/30/main', 523.000, 95, 0);
+INSERT INTO `sanpham` VALUES (14, 'SP014', 'Điện Thoại Nokia-Lumia 750HD Plus', 2, 1, 'TPHCM', NULL, '2018-12-04 09:57:03.000000', 55, 'imgs/sp/16/main', 145.250, 68, 1);
+INSERT INTO `sanpham` VALUES (15, 'SP015', 'Điện Thoại Nokia 570 Plus', 2, 1, 'Gia Lai', NULL, '2018-11-28 09:57:08.000000', 25, 'imgs/sp/7/main', 158.250, 14, 0);
+INSERT INTO `sanpham` VALUES (16, 'SP016', 'Điện Thoại Nokia - Cao Cấp 702SD', 2, 1, 'Phú Quốc', NULL, '2018-12-03 09:57:17.000000', 27, 'imgs/sp/5/main', 180.000, 32, 1);
+INSERT INTO `sanpham` VALUES (17, 'SP017', 'Nhẫn Cao Cấp Hà Liên', 1, 4, 'TPHCM', NULL, '2018-12-04 09:46:36.000000', 14, 'imgs/sp/24/main', 456.240, 47, 0);
+INSERT INTO `sanpham` VALUES (18, 'SP018', 'Nhẫn 7 màu cao cấp', 1, 4, 'TPHCM', NULL, '2018-12-04 09:46:42.000000', 19, 'imgs/sp/25/main', 1452.250, 25, 1);
+INSERT INTO `sanpham` VALUES (19, 'SP019', 'Nhẫn mạ vàng 9999', 1, 4, 'Phú yên', NULL, '2018-12-04 09:46:47.000000', 91, 'imgs/sp/26/main', 1258.240, 11, 0);
+INSERT INTO `sanpham` VALUES (20, 'SP020', 'Nhẫn kim cương Romatic', 1, 4, 'Hà Nội', NULL, '2018-11-30 09:46:51.000000', 65, 'imgs/sp/27/main', 9999.999, 35, 0);
+INSERT INTO `sanpham` VALUES (21, 'SP021', 'Nhẫn bạc đính vàng', 1, 4, 'TPHCM', NULL, '2018-12-03 09:46:59.000000', 25, 'imgs/sp/28/main', 2584.280, 25, 1);
+INSERT INTO `sanpham` VALUES (22, 'SP022', 'Nhẫn loda', 1, 4, 'Nha Trang', NULL, '2018-12-09 09:47:04.000000', 14, 'imgs/sp/23/main', 8965.000, 11, 0);
+INSERT INTO `sanpham` VALUES (23, 'SP023', 'Bông Tai Em Bé SD120', 3, 3, 'DakLak', NULL, '2018-12-02 09:47:29.000000', 22, 'imgs/sp/9/main', 5522.500, 254, 1);
+INSERT INTO `sanpham` VALUES (24, 'SP024', 'Bông Tai Hà Giang', 3, 3, 'Bà Rịa Vũng Tàu', NULL, '2018-12-03 09:48:08.000000', 14, 'imgs/sp/11/main', 258.896, 24, 1);
+INSERT INTO `sanpham` VALUES (25, 'SP025', 'Bông Tai Đính Hạt Cườm Cao Cấp', 3, 3, 'TPHCM', NULL, '2018-11-29 09:48:22.000000', 80, 'imgs/sp/17/main', 140.000, 91, 1);
+INSERT INTO `sanpham` VALUES (26, 'SP026', 'Bông Tai Hạt Sophie', 3, 3, 'Hàn Xanh', NULL, '2018-12-03 09:48:30.000000', 14, 'imgs/sp/9/1', 586.000, 12, 0);
+INSERT INTO `sanpham` VALUES (27, 'SP027', 'Bông Tai Hạt Ramot bạc', 3, 3, 'Nha Trang', NULL, '2018-12-05 09:48:35.000000', 63, 'imgs/sp/17/1', 1558.000, 2, 0);
+INSERT INTO `sanpham` VALUES (28, 'SP028', 'Quần cho baby 8 tuổi', 4, 5, 'TPHCM', NULL, '2018-11-26 09:49:40.000000', 63, 'imgs/sp/1/1', 152.240, 3, 0);
+INSERT INTO `sanpham` VALUES (29, 'SP029', 'Quần freestyle cho bé', 4, 5, 'Phú Quốc', NULL, '2018-12-03 07:52:27.000000', 25, 'imgs/sp/1/2', 2558.500, 6, 1);
+INSERT INTO `sanpham` VALUES (30, 'SP030', 'Quần jean đẹp cao cấp', 4, 5, 'Bà Rịa Vũng Tàu', NULL, '2018-12-03 09:52:37.000000', 24, 'imgs/sp/6/1', 1558.260, 5, 1);
+INSERT INTO `sanpham` VALUES (31, 'SP031', 'Áo thun cho nam vãi nhung', 4, 5, 'Bà Rịa Vũng Tàu', NULL, '2018-12-02 11:53:25.000000', 27, 'imgs/sp/1/main', 1486.000, 14, 0);
+INSERT INTO `sanpham` VALUES (32, 'SP032', 'Áo thun trơn sơ mi', 4, 5, 'TPHCM', NULL, '2018-12-02 12:53:33.000000', 72, 'imgs/sp/1/2', 15.256, 47, 1);
+INSERT INTO `sanpham` VALUES (33, 'SP033', 'Giày nam thể thao đẹp', 5, 2, 'TPHCM', NULL, '2018-11-30 09:53:46.000000', 84, 'imgs/sp/21/1', 5895.560, 24, 0);
+INSERT INTO `sanpham` VALUES (34, 'SP034', 'Giày thể thao cao cấp', 5, 2, 'Phú Quốc', NULL, '2018-12-03 09:54:45.000000', 45, 'imgs/sp/20/main', 4785.556, 23, 1);
+INSERT INTO `sanpham` VALUES (35, 'SP035', 'Giày nam đẹp cao cấp 230', 5, 2, 'Bà Rịa Vũng Tàu', NULL, '2018-11-28 09:55:20.000000', 61, 'imgs/sp/20/2', 14.599, 2, 1);
+INSERT INTO `sanpham` VALUES (36, 'SP036', 'Giày + dây siêu đẹp', 5, 2, 'Nha Trang', NULL, '2018-12-03 09:00:26.000000', 95, 'imgs/sp/20/1', 1583.580, 24, 0);
+INSERT INTO `sanpham` VALUES (37, 'SP037', 'Giày sale 20%', 5, 2, 'Nha Trang', NULL, '2018-12-02 06:55:41.000000', 85, 'imgs/sp/22/main', 4485.000, 24, 1);
+INSERT INTO `sanpham` VALUES (38, 'SP038', 'Giày tây cao cấp', 5, 2, 'Bà Rịa Vũng Tàu', NULL, '2018-12-02 09:55:51.000000', 75, 'imgs/sp/21/main', 1482.000, 25, 0);
+INSERT INTO `sanpham` VALUES (39, 'SP039', 'Giày nữ đẹp sale 10%', 5, 2, 'Phú Quốc', NULL, '2018-12-02 09:55:58.000000', 7, 'imgs/sp/2/main', 149.000, 77, 1);
+INSERT INTO `sanpham` VALUES (40, 'SP040', 'Giày sandal cao cấp cho trẻ em', 5, 2, 'Bà Rịa Vũng Tàu', NULL, '2018-11-26 09:56:06.000000', 31, 'imgs/sp/2/1', 4278.000, 21, 1);
 INSERT INTO `sanpham` VALUES (41, 'SP030', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO `sanpham` VALUES (43, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
