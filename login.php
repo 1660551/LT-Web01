@@ -1,29 +1,33 @@
-
 <?php
-	
-	session_start();
-	if (!isset($_SESSION["dang_nhap_chua"])) {
-		$_SESSION["dang_nhap_chua"] = 0;
-	}
-
+    session_start();
 	require_once './lib/db.php';
+    if($_SESSION['dang_nhap_chua']==1)
+    {
+        header("Location:index.php");
+    }
+    else{
+        if (isset($_POST["btnLogin"])) {
+            $username = $_POST["txtUserName"];
+            $password = $_POST["txtPassword"];
+            $enc_password = $password;//md5($password);
+    		if (isset($_POST["SavePassWord"])) {
+					setcookie('user',$username, time()+ 84600*30,'/','', 0, 0);
+					setcookie('pass', $password, time()+ 84600*30,'/','', 0, 0);
 
-	if (isset($_POST["btnLogin"])) {
-		$username = $_POST["txtUserName"];
-		$password = $_POST["txtPassword"];
-		$enc_password = $password;//md5($password);
-
-		$sql = "select * from nguoidung where UserName = '$username' and PassWord = '$enc_password'";
-		$rs = load($sql);
-		if ($rs->num_rows >0) {
-			$_SESSION["current_user"] = $rs->fetch_object();
-			$_SESSION["dang_nhap_chua"] = 1;
-			header("Location: profile.php");
-		} else {
-			// sinh viên xử lý show_alert
-			echo "Username hoặc mật khẩu chưa đúng";
-		}
-	}
+            }
+            $sql = "select * from nguoidung where UserName = '$username' and PassWord = '$enc_password'";
+            $rs = load($sql);
+            if ($rs->num_rows >0) {
+                $_SESSION["current_user"] = $rs->fetch_object();
+                $_SESSION["dang_nhap_chua"] = 1;
+				
+                header("Location: index.php");
+            } else {
+                // sinh viên xử lý show_alert
+                echo "Username hoặc mật khẩu chưa đúng";
+            }
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -65,8 +69,33 @@
                                 </div>
                                 <div class="col-md-3">
                                     <ul class="usermenu">
-                                        <li><a href="checkout.html" class="log">Login</a></li>
-                                        <li><a href="checkout2.html" class="reg">Register</a></li>
+                                    <?php
+                                        if(isset($_SESSION["current_user"])){if($_SESSION["current_user"]->Quyen==1){?>
+                                        <li><a href="Quanly.php">Quyền hạn admin</a></li>
+                                        <?php
+                                            }
+                                        }
+                                        ?>
+                                        <?php
+                                        if(!isset($_SESSION["dang_nhap_chua"])) {
+                                            $_SESSION["dang_nhap_chua"] = 0;
+                                        }
+                                        if ($_SESSION["dang_nhap_chua"] == 0) {
+                                        ?>
+                                        <li><a href="login.php" class="log">Login</a></li>
+                                        <li><a href="register.php" class="reg">Register</a></li>
+                                        <?php
+                                        }
+                                        else{?>
+                                        <li><a href="profile.php" class="log">
+                                        <?php
+                                        echo $_SESSION["current_user"]->UserName;
+                                        echo "</a></li>";
+                                        ?>
+                                        <li><a href="logout.php" class="reg">Logout</a></li>
+                                        <?php
+                                        }
+                                        ?>
                                     </ul>
                                 </div>
                             </div>
@@ -75,38 +104,11 @@
                         <div class="header_bottom">
                             <ul class="option">
                                 <li id="search" class="search">
-                                    <form><input class="search-submit" type="submit" value=""><input class="search-input" placeholder="Enter your search term..." type="text" value="" name="search"></form>
-                                </li>
+                                <form action="search.php" method="get"><input class="search-submit" type="submit" value=""><input class="search-input" placeholder="Enter your search term..." type="text" value="" name="search"></form>                                </li>
                                 <li class="option-cart">
-                                    <a href="Cart.html" class="cart-icon">cart <span class="cart_no">02</span></a>
+                                    <a href="Cart.html" class="cart-icon">cart <span class="cart_no"></span></a>
                                     <ul class="option-cart-item">
-                                        <li>
-                                            <div class="cart-item">
-                                                <div class="image"><img src="bootstrap/images/Bàn-ghế/GoFGUC0028.jpg" alt=""></div>
-                                                <div class="item-description">
-                                                    <p class="name">GoFGUC0028</p>
-                                                    <p>Quantity: <span class="light-red">01</span></p>
-                                                </div>
-                                                <div class="right">
-                                                    <p class="price">$300</p>
-                                                    <a href="#" class="remove"><img src="bootstrap/images/remove.png" alt="remove"></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="cart-item">
-                                                <div class="image"><img src="bootstrap/images/Bàn-ghế/GoFGUC003.jpg" alt=""></div>
-                                                <div class="item-description">
-                                                    <p class="name">GoFGUC003</p>
-                                                    <p>Quantity: <span class="light-red">01</span></p>
-                                                </div>
-                                                <div class="right">
-                                                    <p class="price">$250</p>
-                                                    <a href="#" class="remove"><img src="bootstrap/images/remove.png" alt="remove"></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li><span class="total">Total <strong>$550</strong></span><button class="checkout" onClick="location.href='Cart.html'">CheckOut</button></li>
+                                        <li><span class="total">Total <strong>$0</strong></span><button class="checkout" onClick="location.href='Cart.html'">CheckOut</button></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -155,12 +157,12 @@
 					<div class="form-group">
 						<label for="txtUserName"><strong>Tên đăng nhập</strong></label><br>
                         <br>
-						<input type="text" class="form-control" id="txtUserName" name="txtUserName" placeholder="Nhập tên người dùng của bạn">
+						<input type="text" class="form-control" id="txtUserName" name="txtUserName" value = "<?php if(isset($_COOKIE['user'])) echo $_COOKIE['user']; ?>" placeholder="Nhập tên người dùng của bạn">
 					</div>
 					<div class="form-group">
 						<label for="txtPassword"><strong>Mật khẩu</strong></label><br>
                         <br>
-						<input type="password" class="form-control" id="txtPassword" name="txtPassword" placeholder="Nhập mật khẩu vào đây">
+						<input type="password" class="form-control" id="txtPassword" value = "<?php if(isset($_COOKIE['pass'])) echo $_COOKIE['pass']; ?>" name="txtPassword" placeholder="Nhập mật khẩu vào đây">
 					</div>
                      <div class="g-recaptcha"
           data-sitekey="6LelZAsTAAAAAAv1ADYDnq8AzbmPmbMvjh-xhfgB"></div>
@@ -169,6 +171,8 @@
 						<span class="glyphicon glyphicon-user"></span>
 						Đăng nhập
 					</button>
+                    <input type = "checkbox" <?php if(isset($_COOKIE['user'])) echo "Đã check"; ?> name="SavePassWord"><label><strong> Save PassWord</strong></label>
+
                     <!-- reCAPTCHA -->
      
 				</form>
